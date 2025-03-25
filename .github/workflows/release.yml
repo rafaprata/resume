@@ -1,5 +1,4 @@
 name: Build and Release Resume
-
 on:
   push:
     branches: [main]
@@ -9,14 +8,12 @@ on:
       - "**.sty"
       - ".docker/**"
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       packages: write
-
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-buildx-action@v3
@@ -25,7 +22,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Build and Push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -34,13 +30,11 @@ jobs:
           tags: ghcr.io/${{ github.repository_owner }}/latex-builder:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
       - name: Build Resume
         run: |
           docker run --rm -v "${{ github.workspace }}:/data" \
             ghcr.io/${{ github.repository_owner }}/latex-builder \
-            -jobname="Anish_Shobith_P_S_Resume" main.tex
-
+            -jobname="Rafael_P_Souza_Resume" main.tex
       - name: Create Release
         if: github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
@@ -61,6 +55,6 @@ jobs:
             ```
 
             ### 📎 Files
-            - [Download Resume PDF](https://github.com/${{ github.repository }}/releases/download/v${{ github.run_number }}/Anish_Shobith_P_S_Resume.pdf)
-          files: Anish_Shobith_P_S_Resume.pdf
+            - [Download Resume PDF](https://github.com/${{ github.repository }}/releases/download/v${{ github.run_number }}/Rafael_P_Souza_Resume.pdf)
+          files: Rafael_P_Souza_Resume.pdf
           token: ${{ secrets.GITHUB_TOKEN }}
