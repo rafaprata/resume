@@ -41,7 +41,7 @@ docker build -t latex-builder .docker
 <p> 3. <strong>Run the Container and Generate the Resume</strong>: Compile the LaTeX file to generate the resume PDF:</p>
 
 ```sh
-docker run --rm -v "$(pwd):/data" latex-builder -jobname="Anish_Shobith_P_S_Resume" main.tex
+docker run --rm -v "$(pwd):/data" latex-builder -jobname="Rafael_Resume_2" main.tex
 ```
 
 > [!NOTE]
