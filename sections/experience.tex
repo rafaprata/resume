@@ -2,50 +2,31 @@
 
 \experience
   {DevOps Engineer}
-  {Hitachi Rail}
-  {Lisbon, Portugal}
-  {Sep 2023 --  Present}
-  {
-    % \item I developed and implemented a Kubernetes Platform to support our development team’s applications, focusing on new features, updates, and bug fixes. I led the refactoring of version 6, enhancing the installation system and central repository framework. I earned the Certified Kubernetes Administrator (CKA) accreditation, demonstrating my expertise. I improved skills in managing Kubernetes clusters, RabbitMQ, Redis, PostgreSQL, and more. I delivered major platform releases, including version 5 and 6, significantly boosting reliability and functionality.
-    \item Designed, implemented, and maintained a Kubernetes-based platform supporting development teams and application workloads, with focus on platform reliability, repeatable deployments, environment configuration, and operational scalability.
-    \item Led the refactoring and delivery of major platform releases from version 5 to version 10, improving the installation system, central repository structure, deployment consistency, and platform maintainability across K3S-based clusters managed with Ansible automation.
-    \item Implemented rolling upgrade strategies for K3S clusters to minimize customer downtime during platform version bumps, and operated AKS-managed clusters with both rolling and blue-green upgrade patterns across Kubernetes versions 1.28 to 1.35.
-    \item Executed a blue-green cluster upgrade on AKS involving full cluster rebuild, component reconfiguration, and infrastructure changes, using External DNS for domain redirection, parallel application validation with alternate domains, and Istio traffic management for zero-downtime cutover during maintenance windows.
-    \item Planned and executed Kubernetes version upgrades including resource compatibility analysis, component version alignment, Azure API constraint validation, node version management, and customer communication with detailed upgrade plans.
-    \item Maintained and operated a full platform solution on AKS, managing infrastructure lifecycle, cluster operations, networking, storage, monitoring, and application workloads across development and production environments.
-    \item Implemented ArgoCD using the App of Apps pattern to manage GitOps workflows for infrastructure applications delivered to customers, with one ArgoCD instance per cluster across development and production environments.
-    \item Designed a GitOps architecture with a custom Helm chart (base-helm-chart) using the parent charting pattern, integrating personalized templates alongside public infrastructure charts such as Prometheus, Grafana, and DataDog.
-    \item Structured a configuration repository containing application manifests and Helm values files, enabling customer onboarding by adding application manifests and environment-specific values to deploy infrastructure components like PostgreSQL, JupyterHub, and controllers.
-    \item Configured ArgoCD parent applications deployed via Terraform to discover and apply application manifests from the configuration repository, with each child application rendering the base Helm chart using customer-specific values and auto-sync with self-heal policies.
-    \item Automated and supported Kubernetes platform delivery workflows involving infrastructure setup, application deployment, configuration management, validation steps, and operational handoff.
-    \item Worked across Kubernetes, RabbitMQ, Redis, PostgreSQL, Helm, ArgoCD, Terraform, CI/CD pipelines, monitoring, and cloud infrastructure to support reliable platform operations and reduce manual intervention.
-    \item Troubleshot complex infrastructure and deployment issues across Kubernetes workloads, networking, storage, CI/CD, observability, and application dependencies.
-    \item Created and maintained technical documentation, operational procedures, and troubleshooting guidance to support platform teams and application delivery.
-    \item Earned the Certified Kubernetes Administrator certification, strengthening hands-on expertise in Kubernetes cluster operations, workload management, scheduling, troubleshooting, and platform reliability.
-  }
-
-\experience
-  {DevOps Engineer}
-  {Aubay Portugal}
+  {Aubay Portugal (Client: Hitachi Rail)}
   {Lisbon, Portugal}
   {May 2023 -- Present}
   {
-    \item Working as a contractor for Hitachi Rail, supporting cloud-native platform engineering, Kubernetes operations, infrastructure automation, and DevOps delivery initiatives.
+    \item Designed and operated a Kubernetes-based platform serving four customers across production and development environments, managing 20+ applications per customer with focus on high availability, repeatable deployments, and operational scalability.
+    \item Led platform releases from version 5 through version 10, including rolling upgrades on K3s clusters and blue-green upgrades on AKS, achieving zero-downtime cutovers through External DNS weighted routing, parallel validation with alternate domains, and Istio traffic management.
+    \item Implemented Argo CD using the App of Apps pattern for GitOps-driven delivery across all clusters, with auto-sync, self-heal policies, and a custom base Helm chart integrating Prometheus, Grafana, and Datadog.
+    \item Operated AKS and K3s clusters across Kubernetes versions 1.28 to 1.35, performing compatibility analysis, component version alignment, Azure API constraint validation, and coordinated customer communication for each upgrade cycle.
+    \item Automated infrastructure provisioning and cluster lifecycle with Terraform and Ansible, reducing manual intervention and standardizing environment configuration across customers.
+    \item Implemented observability stacks with Prometheus, Grafana, Alertmanager, and Datadog; built runbooks and deployment validation procedures to support incident response and production troubleshooting.
+    \item Troubleshot complex issues across Kubernetes workloads, networking, Istio service mesh, storage, RabbitMQ, Redis, PostgreSQL, and CI/CD pipelines under production pressure.
+    \item Created and maintained technical documentation, operational procedures, and troubleshooting guides to enable team autonomy and reduce incident resolution time.
   }
 
 \experience
   {DevOps Engineer}
-  {KaBuM!}
-  {São Paulo, Brazil}
-  {Nov 2021 --  May 2023}
+  {KaBuM|}
+  {S\~{a}o Paulo, Brazil}
+  {Nov 2021 -- May 2023}
   {
-    % \item As an Infrastructure Analyst with the DevOps team at KaBuM!, I implemented, developed, and maintained development and production environments. I collaborated with the order processing team to create CI/CD pipelines for microservices and maintained system tools. I led the infrastructure planning for integrating OpenFinance payment methods, starting with NuBank, ensuring cost-effective AWS service selection. I reduced system failures by implementing advanced monitoring and alerting with Prometheus, Grafana, and DataDog. I refined my skills in continuous integration and deployment using AWS CodePipeline and CodeBuild, infrastructure management with Terraform, and performance optimization with Nginx and AWS CloudFront. My work on the OpenFinance project increased net sales and enhanced the company's payment ecosystem.
-    \item Implemented, maintained, and improved development and production environments using AWS, Terraform, CI/CD pipelines, monitoring, and infrastructure automation practices.
-    \item Built and maintained CI/CD pipelines for microservices in collaboration with application teams, improving deployment consistency, release quality, and operational reliability.
-    \item Led infrastructure planning for OpenFinance payment method integration, including AWS service selection, architecture decisions, cost considerations, and delivery support.
-    \item Improved observability and incident response by implementing monitoring and alerting with Prometheus, Grafana, and DataDog.
-    \item Automated infrastructure and deployment workflows using Terraform, AWS CodePipeline, AWS CodeBuild, Nginx, AWS CloudFront, and related AWS services.
-    \item Supported production troubleshooting across infrastructure, applications, pipelines, networking, monitoring, and performance layers.
+    \item Implemented and maintained AWS production infrastructure using Terraform, CI/CD pipelines, monitoring, and infrastructure automation across development and production environments.
+    \item Led infrastructure planning for OpenFinance payment integration, including AWS service selection, architecture design, cost optimization, and delivery support for a revenue-critical project.
+    \item Improved observability and incident response by deploying Prometheus, Grafana, and Datadog for monitoring, alerting, and production troubleshooting.
+    \item Built CI/CD pipelines for microservices using AWS CodePipeline, CodeBuild, and related services, improving deployment consistency and release reliability.
+    \item Automated infrastructure workflows with Terraform, Nginx, and AWS CloudFront, reducing manual effort and improving operational efficiency.
   }
 
 \experience
@@ -54,25 +35,19 @@
   {Rio de Janeiro, Brazil}
   {Jun 2021 -- Nov 2021}
   {
-    % \item I developed comprehensive infrastructure solutions in AWS, focusing on CI/CD implementation, process automation, and documentation. I led the migration and automation of legacy systems to a scalable cloud infrastructure, using AWS services to create a robust CI/CD pipeline, improving deployment frequency and quality for four customers. I minimized downtime during upgrades with effective CI/CD strategies and real-time monitoring via CloudWatch and Slack. I expanded my expertise in AWS services like CloudFormation, CodePipeline, and RDS, and improved my server management and load balancing skills with AWS Application Load Balancer and Nginx. My contributions significantly enhanced infrastructure efficiency, boosting deployment speeds and reducing manual intervention, thereby increasing productivity.
-    \item Designed and implemented AWS infrastructure solutions focused on CI/CD, infrastructure automation, process standardization, and operational documentation for multiple customers.
-    \item Migrated and automated legacy systems into scalable cloud infrastructure using AWS services, CloudFormation, CodePipeline, RDS, Application Load Balancer, and Nginx.
-    \item Built GitLab CI/CD pipelines performing continuous integration on each commit and pull request against the main branch, running application tests, building Docker images, updating CloudFormation configuration templates with new image versions, and deploying infrastructure changes to AWS using the AWS CLI.
-    \item Improved deployment frequency and quality for customer environments by building repeatable CI/CD workflows and reducing manual release steps.
-    \item Reduced downtime during upgrades through deployment planning, monitoring, rollback awareness, and real-time alerting with CloudWatch and Slack.
-    \item Created documentation and operational procedures to improve infrastructure maintainability and customer handoff.
+    \item Designed and implemented AWS infrastructure for multiple customers, focusing on CI/CD automation, CloudFormation, RDS, Application Load Balancer, and operational standardization.
+    \item Built GitLab CI pipelines performing continuous integration, Docker image builds, CloudFormation deployments, and automated AWS infrastructure changes via CLI.
+    \item Reduced downtime during upgrades through deployment planning, rollback strategies, and real-time alerting with CloudWatch and Slack.
+    \item Migrated legacy systems to scalable AWS infrastructure, improving deployment frequency and reducing manual release steps for four customer environments.
   }
 
 \experience
   {DevOps Engineer}
   {eLinke Tecnologia}
-  {São Paulo, Brazil}
+  {S\~{a}o Paulo, Brazil}
   {Feb 2021 -- Jun 2021}
   {
-    % \item As a Linux system administrator, I focused on building and maintaining infrastructure using Infrastructure as Code (IaC) in cloud environments and with virtual machines. I deployed IT infrastructure for a new web application, designing the cloud architecture with Terraform to ensure integration, automation, and scalability. My efficient implementation reduced incident response times and improved system stability and security, earning management accolades. I enhanced my automation skills with Ansible and Terraform, and expanded my cloud knowledge with Digital Ocean Cloud and network security through OpenVPN deployment. My contributions optimized IT infrastructure, increasing operational efficiency and reducing maintenance costs through IaC and process automation.
-    \item Built and maintained Linux-based infrastructure using Infrastructure as Code practices across cloud environments and virtual machines.
-    \item Designed and deployed cloud infrastructure for a new web application using Terraform, improving automation, scalability, and operational consistency.
-    \item Automated infrastructure setup and maintenance tasks with Terraform and Ansible, reducing manual effort and improving system stability.
-    \item Supported network security and access management through OpenVPN deployment and cloud infrastructure hardening.
-    \item Improved incident response, system reliability, and infrastructure maintainability through automation, monitoring, and operational process improvements.
+    \item Designed cloud infrastructure for web applications using Terraform, improving automation, scalability, and operational consistency.
+    \item Automated infrastructure provisioning and maintenance with Terraform and Ansible, reducing manual effort and improving system stability.
+    \item Deployed OpenVPN and implemented infrastructure hardening practices to support network security and access management.
   }
